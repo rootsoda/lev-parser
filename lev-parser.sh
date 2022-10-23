@@ -16,11 +16,8 @@ read -N 999999 -t 0.001
 # Show menu 
 # Assume merong sslscan 
 # Assume nasa same directory yung targets textfile
-#
-
 
 clear
-
 
 echo 'Welcome to lev-parser! Choose from the options below'
 
