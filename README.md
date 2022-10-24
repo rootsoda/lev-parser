@@ -46,73 +46,18 @@ Where to Use
 
 Usage
 -----
-Pass the Nmap output via stdin or from a specified file (`-i`).  
-The processed dump can be collected at stdout or to a specified file (`-o`).
+Run the script.
 
 ### Options
-python3 lev-parser.py -i <nmap_ssl_script_output_file> -o <parsed.txt>
+```
+usage: ./lev-parser
 
 ```
-usage: lev-parser [-i] [-i INPUT] [-o OUTPUT]
-
-optional arguments:
-  -h, --help            show this help message and exit
-
-Mandatory parameters:
-  -i INPUT, --input INPUT
-                        Nmap scan output file in normal (-oN)
-
-Output parameters:
-  -o OUTPUT, --output OUTPUT
-                        Plaintext output filename (stdout if not specified)
-```
-
-### Nmap Normal format (default output format -oN)
-```
-$ python lev-parser.py -i script-results.txt -o results-filename.txt
-A. TLS v1.1 Enabled
-10.0.0.1:443
-10.20.25.45:1702
-  ...
-  ...
-  ...
-<host>:<port>
-
-B. SSLv3 Enabled
-10.0.0.1:443
-10.20.25.45:1702
-  ...
-  ...
-  ...
-<host>:<port>
-
-C. SSL Weak Hashing Algorithm
-- MD5
-10.0.0.1:443
-10.20.25.45:1702
-  ...
-  ...
-  ...
-<host>:<port>
-- <weak certificate hash>
-10.0.0.1:443
-10.20.25.45:1702
-  ...
-  ...
-  ...
-<host>:<port>
-
-D. Use of Self-Signed Certificates:
-none
-```
-
-Dependencies and installation
------------------------------
-* A Python interpreter with version 2.7 or 3.X
 
 Changelog
 ---------
 * version 1.0 - updated implementation from bash script to python script
+* 10/24/22 - included SSL/TLS Protocol parsing (using sslscan only) 
 
 Copyright and License
 ---------------------
