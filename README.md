@@ -1,9 +1,8 @@
 LEV-parser
 ============
-
-Description
+![Menu](https://raw.githubusercontent.com/rootsoda/lev-parser/main/menu1.png)
 -----------
-A simple python script to parse Low Encryption Vulnerability nmap script results
+A simple bash script to parse Low Encryption Vulnerability nmap script results
 
 Features
 --------
@@ -34,7 +33,7 @@ Objectives
 
 Implementation
 -----
-Python script to be run and/or stored inside:
+Bash script to be run and/or cloned inside:
 - VC-RAP
 - Personal Kali VM
 
@@ -46,11 +45,12 @@ Where to Use
 
 Usage
 -----
-Run the script.
+Switch to root user and run the script.
 
 ### Options
 ```
-usage: ./lev-parser
+usage: 
+./lev-parser
 
 ```
 
