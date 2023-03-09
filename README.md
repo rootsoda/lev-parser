@@ -1,6 +1,6 @@
 LEV-parser
 ============
-![Menu](https://raw.githubusercontent.com/rootsoda/lev-parser/main/menu1.png)
+![Menu](https://raw.githubusercontent.com/rootsoda/lev-parser/main/menu1.png?token=GHSAT0AAAAAAB7DJHZ4YKYQCTQKUNOT6L3UZAJV5WA)
 -----------
 A simple bash script to parse Low Encryption Vulnerability nmap script results
 
